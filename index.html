@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oblig1</title>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+
+<h1>Bestilling av kinobilletter</h1>
+
+Velg film:
+<select id="filmTitle">
+    <option value="" disabled selected hidden>Velg film her</option>
+    <option>Porco Rosso</option>
+    <option>Wall-e</option>
+    <option>Nemo</option>
+</select><br>
+<br>
+Antall:
+<input type="number" id="antall" min="1" max="9"><br>
+<br>
+Fornavn:
+<input type="text" id="fNavn"><br>
+Etternavn:
+<input type="text" id="eNavn"><br>
+Telefonnr:
+<input type="tel" id="tlf"><br>
+Epost:
+<input type="email" id="epost"><br>
+<br>
+<button onclick="kjøpBillett()">Kjøp billett</button><br>
+
+<h3>Alle billetter</h3>
+<div id="alleBilletter"></div>
+
+<button onclick="slett()">Slett alle billettene</button>
+
+</body>
+</html>
